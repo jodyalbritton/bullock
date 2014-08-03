@@ -1,0 +1,51 @@
+			<%  add_breadcrumb "Home", :root_path, :options => { :title => "Home" } %>
+			<%  add_breadcrumb "Item Example", page_path('single'), :options => { :title => "Example" } %>
+			<div class="offset-help">
+			
+				<!--PRINCIPAL CONTENT-->
+				
+				<div class="block-main">
+					<div id="content">
+					
+						<!-- BLOCK IMAGES-->
+						<div class="block-images row">
+							<!--Title-->
+							<div class="page-nav">
+								<h1 class="title-p">Single Detail View</h1>
+								  <ol class="breadcrumb">
+                      				<%= render_breadcrumbs :tag => :li, :separator => "" %>
+                 				  </ol>
+							</div>
+						
+							<!--Photos-->
+							
+							<div id="grid">
+							
+								<div class="block-item col-md-9  col-sm-9 urban bw">
+									<div class="photo">
+									
+										<div class="img-frame">
+												<img src="http://placehold.it/1152x768" alt="stock picture">
+										</div>
+										
+									</div>
+								</div>
+								<div class="block-item col-md-3  col-sm-3">
+									<h4>Overview</h4><br>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, quis fringilla ligula aliquet ut. Maecenas sed justo varius velit imperdiet bibendum. Vivamus nec sapien massa, a imperdiet diam.</p>
+									<p>Aliquam erat volutpat. Sed consectetur suscipit nunc et rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo.</p>
+								</div>
+
+							
+							</div>
+
+						</div>
+						<!-- /BLOCK IMAGES-->
+						
+
+						
+						
+					</div>
+				</div>		
+								
+			</div>	

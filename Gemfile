@@ -36,7 +36,7 @@ gem "figaro"
 # Layout and Rendering
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
-
+gem "breadcrumbs_on_rails"
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'bootstrap-generators', '~> 3.1.1'
 gem 'autoprefixer-rails'

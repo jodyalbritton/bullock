@@ -1,4 +1,5 @@
-				
+<%  add_breadcrumb "Home", :root_path, :options => { :title => "Home" } %>
+<%  add_breadcrumb "Contact", page_path('contact'), :options => { :title => "contact" } %>			
 <div class="offset-help">
 				<div class="block-main">
 					<div id="content-2" >
@@ -9,10 +10,9 @@
 							<div class="block-content row page-title">
 								<div class="typho page-nav">
 
-									<h1 class="title-p">Contact Us</h1>
-								  <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li class="active">Contact us</li>
+					<h1 class="title-p">Contact Us</h1>
+				  <ol class="breadcrumb">
+                    <%= render_breadcrumbs :tag => :li, :separator => "" %>
                   </ol>
 								</div>
 							</div>

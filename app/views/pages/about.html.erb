@@ -1,3 +1,5 @@
+<%  add_breadcrumb "Home", :root_path, :options => { :title => "Home" } %>
+<%  add_breadcrumb "About", page_path('about'), :options => { :title => "About" } %>
 			<div class="offset-help">
 			
 				<!--PRINCIPAL CONTENT-->
@@ -7,14 +9,12 @@
 					
 						<!-- BLOCK CONTENT-->
 
-							<!--Title-->
-							<div class="block-content row page-title">
-								<div class="typho page-nav">
-									<h1 class="title-p">About Us</h1>
-								   <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li class="active">About</li>
+			<!--Title-->
+			<div class="block-content row page-title">
+				<div class="typho page-nav">
+					<h1 class="title-p">About The Studio</h1>
+				   <ol class="breadcrumb">
+                    <%= render_breadcrumbs :tag => :li, :separator => "" %>
                   </ol>
 								</div>
 							</div>
@@ -24,6 +24,12 @@
 
 								<div class="col-md-8 col-sm-8">
 										<h4>Who Is Charlie Bullock?</h4>
+										<p>Integer eu euismod sem. Fusce eleifend aliquam arcu, eget ullamcorper diam auctor sed. Vivamus pulvinar venenatis mattis. Fusce sit amet nulla gravida odio bibendum mollis eu sit amet tortor. Nam risus magna, tempus vitae leo eget, venenatis feugiat tortor. Nam hendrerit viverra ornare.Sed vitae enim vulputate orci commodo semper. Sed accumsan tincidunt lacus nec consequat. Quisque rutrum dui quis odio ornare porta. Duis justo dolor, tempor quis adipiscing sit amet, mollis id sem.</p>
+
+										<h4>More Info</h4>
+										<p>Integer eu euismod sem. Fusce eleifend aliquam arcu, eget ullamcorper diam auctor sed. Vivamus pulvinar venenatis mattis. Fusce sit amet nulla gravida odio bibendum mollis eu sit amet tortor. Nam risus magna, tempus vitae leo eget, venenatis feugiat tortor. Nam hendrerit viverra ornare.Sed vitae enim vulputate orci commodo semper. Sed accumsan tincidunt lacus nec consequat. Quisque rutrum dui quis odio ornare porta. Duis justo dolor, tempor quis adipiscing sit amet, mollis id sem.</p>
+
+										<h4>Something Else</h4>
 										<p>Integer eu euismod sem. Fusce eleifend aliquam arcu, eget ullamcorper diam auctor sed. Vivamus pulvinar venenatis mattis. Fusce sit amet nulla gravida odio bibendum mollis eu sit amet tortor. Nam risus magna, tempus vitae leo eget, venenatis feugiat tortor. Nam hendrerit viverra ornare.Sed vitae enim vulputate orci commodo semper. Sed accumsan tincidunt lacus nec consequat. Quisque rutrum dui quis odio ornare porta. Duis justo dolor, tempor quis adipiscing sit amet, mollis id sem.</p>
 								</div>
 								<div class="col-md-4 col-sm-4">
