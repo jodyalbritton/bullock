@@ -38,7 +38,8 @@ gem "figaro"
 gem 'sass-rails', '~> 4.0.3'
 gem "breadcrumbs_on_rails"
 gem 'bootstrap-sass', '~> 3.2.0'
-gem 'bootstrap-generators', '~> 3.1.1'
+gem 'bootstrap-generators', :git => 'git://github.com/decioferreira/bootstrap-generators.git'
+
 gem 'autoprefixer-rails'
 gem 'high_voltage', '~> 2.2.1'
 

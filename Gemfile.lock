@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/decioferreira/bootstrap-generators.git
+  revision: 41d35849737e7408be1c1ac7602251c4758aaa51
+  specs:
+    bootstrap-generators (3.1.1.3)
+      railties (>= 3.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,10 +35,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    autoprefixer-rails (2.1.1.20140710)
+    autoprefixer-rails (2.2.0.20140727)
       execjs
-    bootstrap-generators (3.1.1.3)
-      railties (>= 3.1.0)
     bootstrap-sass (3.2.0.1)
       sass (~> 3.2)
     breadcrumbs_on_rails (2.3.0)
@@ -133,7 +138,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  bootstrap-generators (~> 3.1.1)
+  bootstrap-generators!
   bootstrap-sass (~> 3.2.0)
   breadcrumbs_on_rails
   coffee-rails (~> 4.0.0)
