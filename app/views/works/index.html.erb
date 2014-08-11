@@ -1,0 +1,72 @@
+      <div class="offset-help">
+      
+        <!--PRINCIPAL CONTENT-->
+        
+        <div class="block-main">
+          <div id="content">
+          
+            <!-- BLOCK IMAGES-->
+            <div class="block-images row">
+              <!--Title-->
+              <div class="page-nav">
+                <h1 class="title-p">Works</h1>
+                  <ol class="breadcrumb">
+                    <%= render_breadcrumbs :tag => :li, :separator => "" %>
+                  </ol>
+                
+                <ul id="portfolio-filter">
+
+                  <li class="filter active" data-filter="all"><a>All</a></li>
+                  <% Category.all.each do |category| %>
+                    <li class="filter" data-filter="<%= category.name.downcase %>"><a><%= category.name %></a></li>
+                  <% end %>
+                </ul>
+                
+              </div>
+            
+              <!--Photos-->
+              
+              <div id="grid">
+              
+              <% @works.each do |work| %>
+                <div class="block-item col-md-3  col-sm-3 mix <%= work.category.name.downcase %> bw">
+                  <div class="photo">
+                    <div class="img-frame">
+                      <%= image_tag work.file.url(:medium) %>
+                      
+                      <div class="overlay-bg"></div>
+                      <div class="overlay-content">
+                        <div class="text">
+                          <%= link_to work_url(work) do %> <i class="fa fa-search"></i><% end %>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h4> <%= work.title %> </h4>
+                  <p><%= work.description %></p>
+                </div>
+              <% end %>
+
+              </div>
+
+            </div>
+            <!-- /BLOCK IMAGES-->
+            
+            <!--Promotional block-->
+            <div class="promotional-block">
+              <div class="text-center">
+                <h3>See something you like?  </h3>
+                <button type="button" class="btn btn-info" id="btn-get">Contact Charlie</button>
+              </div>
+            </div>
+            <!--/Promotional block-->
+            
+            
+          </div>
+        </div>    
+                
+      </div>  
+      
+      <script>
+        App.portfolio();
+      </script>

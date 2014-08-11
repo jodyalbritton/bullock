@@ -42,6 +42,8 @@ gem 'bootstrap-generators', :git => 'git://github.com/decioferreira/bootstrap-ge
 
 gem 'autoprefixer-rails'
 gem 'high_voltage', '~> 2.2.1'
+gem "paperclip", "~> 4.1"
+gem 'jquery-fileupload-rails'
 
 
 # Use Capistrano for deployment

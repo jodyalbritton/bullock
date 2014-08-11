@@ -1,0 +1,51 @@
+
+    
+      <div class="offset-help">
+      
+        <!--PRINCIPAL CONTENT-->
+        
+        <div class="block-main">
+          <div id="content">
+          
+            <!-- BLOCK IMAGES-->
+            <div class="block-images row">
+              <!--Title-->
+              <div class="page-nav">
+                <h1 class="title-p"><%= @work.title %></h1>
+                  <ol class="breadcrumb">
+                    <%= render_breadcrumbs :tag => :li, :separator => "" %>
+                  </ol>
+              </div>
+            
+              <!--Photos-->
+              
+              <div id="grid">
+              
+                <div class="block-item col-md-9  col-sm-9 urban bw">
+                  <div class="photo">
+                  
+                    <div class="img-frame">
+                        <%= image_tag @work.file.url(:large), :class=>"img img-responsive" %>
+                       
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="block-item col-md-3  col-sm-3">
+                  <h4>Overview</h4><br>
+                  <p><%= @work.description %></p>
+                </div>
+
+              
+              </div>
+
+            </div>
+            <!-- /BLOCK IMAGES-->
+            
+
+            
+            
+          </div>
+        </div>    
+                
+      </div>  

@@ -11,15 +11,16 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.visible/jquery.visible
 //= require bootstrap
 //= require jquery.sliderrevolution/jquery.themepunch.plugins.min
 //= require jquery.sliderrevolution/jquery.themepunch.revolution.min
-//= require jquery.visible/jquery.visible
-//= require jquery.imgpreload/jquery.imgpreload.min
 //= require jquery.owl/owl.carousel.min
-//= require jquery.mixitup/jquery.mixitup.min
+//= require jquery.mixitup/jquery.mixitup
 //= require jquery.magnific-popup/dist/jquery.magnific-popup
+//= require jquery.imgpreload/jquery.imgpreload.min
 //= require behaviors/general
 //= require_self
