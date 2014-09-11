@@ -14,15 +14,16 @@
                 <p>Something descriptive about the studio and Charlie</p>
               </div>
               
+              <%  latest_images.each do |image| %>
               <div class="block-item col-md-4  col-sm-4">
                 <div class="photo">
                 
                   <div class="img-frame">
-                      <img src="http://placehold.it/400x266" alt="urbano 1">
+                       <%= image_tag image.file.url(:medium) %>
                       <div class="overlay-bg"></div>
                       <div class="overlay-content">
                         <div class="text">
-                         <%= link_to page_path('single') do %>
+                         <%= link_to work_url(image) do %>
                             <i class="fa fa-search"></i>
                           <% end %>
                          
@@ -33,118 +34,13 @@
                 </div>
                 
                 
-                <h4> City with clouds </h4>
-                <p>This is a beautiful description</p>
+                <h4> <%= image.title %> </h4>
+                <p> <%= image.description %></p>
               </div>
+
+              <% end %>
               
-              <div class="block-item col-md-4  col-sm-4">
-                <div class="photo">
-                
-                  <div class="img-frame">
-                      <img src="http://placehold.it/400x266" alt="urbano 2">
-                      <div class="overlay-bg"></div>
-                      <div class="overlay-content">
-                        <div class="text">
-                          <%= link_to page_path('single') do %>
-                            <i class="fa fa-search"></i>
-                          <% end %>
-                        </div>
-                      </div>
-                  </div>
-                  
-                </div>
-                
-                
-                <h4> Walking the streets </h4>
-                <p>Let scape your imagination with those pictures</p>
-              </div>
-              
-              <div class="block-item col-md-4  col-sm-4">
-                <div class="photo">
-                
-                  <div class="img-frame">
-                      <img src="http://placehold.it/400x266" alt="urbano 3">
-                      <div class="overlay-bg"></div>
-                      <div class="overlay-content">
-                        <div class="text">
-                         <%= link_to page_path('single') do %>
-                            <i class="fa fa-search"></i>
-                          <% end %>
-                        </div>
-                      </div>
-                  </div>
-                  
-                </div>
-                
-                
-                <h4> Road to home </h4>
-                <p>Nothing compares with arrive at sweet home</p>
-              </div>
-                            <div class="block-item col-md-4  col-sm-4">
-                <div class="photo">
-                
-                  <div class="img-frame">
-                      <img src="http://placehold.it/400x266" alt="urbano 1">
-                      <div class="overlay-bg"></div>
-                      <div class="overlay-content">
-                        <div class="text">
-                         <%= link_to page_path('single') do %>
-                            <i class="fa fa-search"></i>
-                          <% end %>
-                        </div>
-                      </div>
-                  </div>
-                  
-                </div>
-                
-                
-                <h4> City with clouds </h4>
-                <p>This is a beautiful description</p>
-              </div>
-              
-              <div class="block-item col-md-4  col-sm-4">
-                <div class="photo">
-                
-                  <div class="img-frame">
-                      <img src="http://placehold.it/400x266" alt="urbano 2">
-                      <div class="overlay-bg"></div>
-                      <div class="overlay-content">
-                        <div class="text">
-                         <%= link_to page_path('single') do %>
-                            <i class="fa fa-search"></i>
-                          <% end %>
-                        </div>
-                      </div>
-                  </div>
-                  
-                </div>
-                
-                
-                <h4> Walking the streets </h4>
-                <p>Let scape your imagination with those pictures</p>
-              </div>
-              
-              <div class="block-item col-md-4  col-sm-4">
-                <div class="photo">
-                
-                  <div class="img-frame">
-                      <img src="http://placehold.it/400x266" alt="urbano 3">
-                      <div class="overlay-bg"></div>
-                      <div class="overlay-content">
-                        <div class="text">
-                          <%= link_to page_path('single') do %>
-                            <i class="fa fa-search"></i>
-                          <% end %>
-                        </div>
-                      </div>
-                  </div>
-                  
-                </div>
-                
-                
-                <h4> Road to home </h4>
-                <p>Nothing compares with arrive at sweet home</p>
-              </div>
+          
 
             </div>
             <!-- /BLOCK IMAGES-->
