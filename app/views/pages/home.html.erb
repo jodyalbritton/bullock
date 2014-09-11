@@ -14,7 +14,7 @@
                 <p>Something descriptive about the studio and Charlie</p>
               </div>
               
-              <%  latest_images.in_groups_of(4) do |group|  %>
+              <%  latest_images.in_groups_of(3) do |group|  %>
               <div class="row">
                   <% group.each do |image| %>
                      <% if image %>
@@ -36,10 +36,10 @@
                         </div>
                         
                       </div>
-                      
-                      
-                      <h4> <%= image.title %> </h4>
-                      <p> <%= image.description %></p>
+                      <div class="image-footer"> 
+                        <h4> <%= image.title %> </h4>
+                        <p> <%= image.description %></p>
+                      </div>
                     </div>
                     <% end %>
                   <% end %>

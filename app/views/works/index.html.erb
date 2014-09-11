@@ -28,23 +28,33 @@
               
               <div id="grid">
               
-              <% @works.each do |work| %>
-                <div class="block-item col-md-3  col-sm-3 mix <%= work.category.name.downcase %> bw">
-                  <div class="photo">
-                    <div class="img-frame">
-                      <%= image_tag work.file.url(:medium) %>
-                      
-                      <div class="overlay-bg"></div>
-                      <div class="overlay-content">
-                        <div class="text">
-                          <%= link_to work_url(work) do %> <i class="fa fa-search"></i><% end %>
+              <% @works.in_groups_of(4) do |group| %>
+               
+                  <div class="row">
+                    <% group.each do |work| %>
+                    <% if work %>
+                    <div class="block-item col-md-3  col-sm-3 mix <%= work.category.name.downcase %> bw">
+                      <div class="photo">
+                        <div class="img-frame">
+                          <%= image_tag work.file.url(:medium) %>
+                          
+                          <div class="overlay-bg"></div>
+                          <div class="overlay-content">
+                            <div class="text">
+                              <%= link_to work_url(work) do %> <i class="fa fa-search"></i><% end %>
+                            </div>
+                          </div>
                         </div>
                       </div>
+                      <div class="image-footer">
+                        <h4> <%= work.title %> </h4>
+                        <p><%= work.description %></p>
+                      </div>
                     </div>
+                  <% end %>
+                  <% end %>
                   </div>
-                  <h4> <%= work.title %> </h4>
-                  <p><%= work.description %></p>
-                </div>
+                
               <% end %>
 
               </div>
