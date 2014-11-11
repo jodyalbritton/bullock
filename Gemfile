@@ -39,12 +39,13 @@ gem 'sass-rails', '~> 4.0.3'
 gem "breadcrumbs_on_rails"
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'bootstrap-generators', :git => 'git://github.com/decioferreira/bootstrap-generators.git'
-
 gem 'autoprefixer-rails'
 gem 'high_voltage', '~> 2.2.1'
 gem "paperclip", "~> 4.1"
 gem 'jquery-fileupload-rails'
-
+gem 'devise'
+gem "rolify"
+gem 'authority'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

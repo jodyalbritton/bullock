@@ -1,4 +1,7 @@
 class WorksController < ApplicationController
+  before_filter :authenticate_user!,
+    :only => [:destroy, :update, :edit, :create, :new]
+  authorize_actions_for ApplicationAuthorizer, :except => [:show, :index]
   before_action :set_work, only: [:show, :edit, :update, :destroy]
   add_breadcrumb "Home", :root_path, :options => { :title => "Home" }
   add_breadcrumb "Works", :works_path, :options => { :title => "Home" }
@@ -8,7 +11,7 @@ class WorksController < ApplicationController
   end
 
   # GET /works/1
-  # GET /works/1.json
+  # GET /works/1.jsons
   def show
     add_breadcrumb @work.title, work_url(@work)
   end
